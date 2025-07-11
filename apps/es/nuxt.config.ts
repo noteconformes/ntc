@@ -11,10 +11,14 @@ export default defineNuxtConfig({
 		"@nuxtjs/google-fonts",
 		"@nuxt/scripts",
 	],
-	ssr: false,
+	ssr: true,
 
 	app: {
-		baseURL: '/ntc/'
+		baseURL: '/ntc/',
+		head: {
+			htmlAttrs: { lang: 'es' },
+			title: 'No te conformes',
+		},
 	},
 
 	devtools: {
