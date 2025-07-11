@@ -13,6 +13,10 @@ export default defineNuxtConfig({
 	],
 	ssr: false,
 
+	app: {
+		baseURL: '/ntc/'
+	},
+
 	devtools: {
 		enabled: true,
 	},
