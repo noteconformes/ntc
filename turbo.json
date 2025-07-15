@@ -3,7 +3,7 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "inputs": ["$TURBO_DEFAULT$", "apps/es/.env*"],
       "outputs": [".nuxt/**", ".output/**", "dist/**"]
     },
     "lint": {},
