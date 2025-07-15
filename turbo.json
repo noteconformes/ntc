@@ -3,7 +3,15 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "inputs": ["$TURBO_DEFAULT$", "apps/es/.env*"],
+      "env": [
+        "NUXT_UI_PRO_LICENSE",
+        "NUXT_PUBLIC_SITE_URL",
+        "NUXT_PUBLIC_BREVO_KEY",
+        "NUXT_PUBLIC_BREVO_URL",
+        "NUXT_PUBLIC_BREVO_LIST_ID",
+        "NUXT_PUBLIC_GOOGLE_TAG_MANAGER"
+      ],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
       "outputs": [".nuxt/**", ".output/**", "dist/**"]
     },
     "lint": {},
