@@ -14,7 +14,6 @@ export default defineNuxtConfig({
 	ssr: true,
 
 	app: {
-		baseURL: '/ntc/',
 		head: {
 			htmlAttrs: { lang: 'es' },
 			title: 'No te conformes',
