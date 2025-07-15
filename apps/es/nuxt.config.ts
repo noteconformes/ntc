@@ -10,6 +10,7 @@ export default defineNuxtConfig({
 		"@nuxt/fonts",
 		"@nuxtjs/google-fonts",
 		"@nuxt/scripts",
+		"nuxt-bugsnag",
 	],
 	ssr: true,
 
@@ -68,6 +69,13 @@ export default defineNuxtConfig({
       googleTagManager: {
         id: process.env.NUXT_PUBLIC_GOOGLE_TAG_MANAGER ?? ''
       }
+    }
+  },
+  bugsnag: {
+	publishRelease: true,
+    disableLog: true,
+    config: {
+      apiKey: '3cb5956ca9faa38940a72e354f705d02',
     }
   }
 });
