@@ -12,7 +12,7 @@ export default defineNuxtConfig({
 		"@nuxt/scripts",
 		"nuxt-bugsnag",
 	],
-	ssr: true,
+	ssr: false,
 
 	app: {
 		head: {
