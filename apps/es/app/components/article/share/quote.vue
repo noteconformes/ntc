@@ -40,7 +40,7 @@ const { copy, copied } = useClipboard({ legacy: true });
         variant="outline"
         color="neutral"
         size="sm"
-        icon="i-lucide-twitter"
+        icon="i-simple-icons-x"
         :href="`https://twitter.com/intent/tweet?text=${quote}&url=${url}`"
         target="_blank"
         rel="noopener noreferrer"
